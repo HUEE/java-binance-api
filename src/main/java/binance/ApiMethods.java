@@ -79,7 +79,12 @@ public class ApiMethods {
      * Trades that fill at the time, from the same order,
      * with the same price will have the quantity aggregated.
      *
-     * @param map
+     * @param map      Name	        Type	Mandatory	Description
+     *                 symbol	    STRING	YES
+     *                 fromId	    LONG	NO	ID to get aggregate trades from INCLUSIVE.
+     *                 startTime	LONG	NO	Timestamp in ms to get aggregate trades from INCLUSIVE.
+     *                 endTime	    LONG	NO	Timestamp in ms to get aggregate trades until INCLUSIVE.
+     *                 limit	    INT	    NO	Default 500; max 500.
      * @param callback
      */
     public void getAggTrades(Map map, ApiCallback callback) {
@@ -89,7 +94,12 @@ public class ApiMethods {
     /**
      * Kline/candlestick bars for a symbol. Klines are uniquely identified by their open time.
      *
-     * @param map
+     * @param map      Name	        Type	Mandatory	Description
+     *                 symbol	    STRING	YES
+     *                 interval	    ENUM	YES
+     *                 limit	    INT 	NO	Default 500; max 500.
+     *                 startTime	LONG	NO
+     *                 endTime	    LONG	NO
      * @param callback
      */
     public void getKlines(Map map, ApiCallback callback) {
