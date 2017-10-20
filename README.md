@@ -1,22 +1,23 @@
 # Java Binance API
 This project is designed to help you make your own projects that interact with the [Binance API](https://www.binance.com/restapipub.html). You can stream candlestick chart data, market depth, or use other advanced features such as setting stop losses and iceberg orders. This project seeks to have complete API coverage including WebSockets.
 
-####Installation 
+#### Installation 
   The Java and Android project can also use the library.<br/>
   <br/>1.Download the Jar [here](https://github.com/HUEE/java-binance-api/blob/master/binanceApi.jar),and dependence the Jar in your java or android project<br/>
   2.git clone the java source ,and add the source into your project .
-  <br/><br/>So,You can use him as simple as the following:
-####Init
+  <br/><br/>So,You can use him as simple as the followin:<br/>
+### Init
 ```java
    BinanceApi.init("APIKEY","APISECRET");
    ApiMethods apiMethods = ApiMethods.getInstance()
 ``` 
    Now , you can get all method through "apiMethods" ,and fetch data what you want .<br/>
    All normal request result in ApiCallback,you can get data String in "onSuccess",and also can deal with err in "onFailure".
-   <br/>But the websocket callback through "WebSocketListener",you can get data from "onMessage". 
-####Example
+   <br/>But the websocket callback through "WebSocketListener",you can get data from "onMessage".
+   
+#### Example
 
-#####Get all account orders; active, canceled, or filled
+##### Get all account orders; active, canceled, or filled
 ```java
     //some multi-parameter request we use Map Upload,
     //but you must upload what server want
@@ -33,7 +34,7 @@ This project is designed to help you make your own projects that interact with t
         });
 ```    
                                                                       
-#####24 hour price change statistics. 
+##### 24 hour price change statistics. 
  ```java
      apiMethods.get24hr("BNBETH", new ApiCallback() {
          public void onSuccess(String result) {
@@ -44,7 +45,7 @@ This project is designed to help you make your own projects that interact with t
          }
      });
  ```
- ####Websocket url for depth endpoint
+ ####  Websocket url for depth endpoint
  ```java
  // 1m,3m,5m,15m,30m,1h,2h,4h,6h,8h,12h,1d,3d,1w,1M
  apiMethods.wsKline("BNBETH", "1m",new WebSocketListener() {
@@ -65,17 +66,17 @@ This project is designed to help you make your own projects that interact with t
              }
          });
   ```
-  #####when you want to close the websocket 
+  ##### when you want to close the websocket 
  ```java
  apiMethods.closeWs();
  ```
  
- ###Other
+ ### Other
 All requests are similar to the above, so I just list the Apilist below.<br/>
 if you want  test or know more about the API ,you can git clone the demo Source code.<br/>
 Also ,if there are any problems in use, please let me know.I'll fix it as soon as possible
 
- ###ApiList
+ ## ApiList
   ```java
     //Test connectivity to the Rest API.
     ping(ApiCallback callback)
