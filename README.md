@@ -3,7 +3,7 @@ This project is designed to help you make your own projects that interact with t
 
 #### Installation 
   The Java and Android project can also use the library.<br/>
-  <br/>1.Download the Jar [here](https://github.com/HUEE/java-binance-api/blob/master/binanceApi.jar),and dependence the Jar in your java or android project<br/>
+  <br/>1.Download the Jar [here](https://github.com/HUEE/java-binance-api/blob/master/binanceApi.jar),and dependence the Jar in your Java or Android project<br/>
   2.git clone the java source ,and add the source into your project .
   <br/><br/>So,You can use him as simple as the followin:<br/>
 ### Init
