@@ -5,7 +5,7 @@ This project is designed to help you make your own projects that interact with t
   The Java and Android project can also use the library.<br/>
   <br/>1.Download the Jar [here](https://github.com/HUEE/java-binance-api/blob/master/binanceApi.jar),and dependence the Jar in your Java or Android project<br/>
   2.git clone the java source ,and add the source into your project .
-  <br/><br/>So,You can use him as simple as the followin:<br/>
+  <br/><br/>So,You can use him as simple as the following:<br/>
 ### Init
 ```java
    BinanceApi.init("APIKEY","APISECRET");
@@ -73,7 +73,7 @@ This project is designed to help you make your own projects that interact with t
  
  ### Other
 All requests are similar to the above, so I just list the Apilist below.<br/>
-if you want  test or know more about the API ,you can git clone the demo Source code.<br/>
+if you want  test or know more about the API ,you can clone the demo Source code.<br/>
 Also ,if there are any problems in use, please let me know.I'll fix it as soon as possible
 
  ## ApiList
